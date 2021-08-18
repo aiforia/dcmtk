@@ -87,6 +87,12 @@ DiImage *DiRegister::createImage(const DiDocument *docu,
         case EPI_YBR_Partial_422:
             image = new DiYBRPart422Image(docu, status);
             break;
+        case EPI_YBR_RCT:
+            image = new DiYBRImage(docu, status);
+            break;
+        case EPI_YBR_ICT:
+            image = new DiYBRImage(docu, status);
+            break;
         default:
             ;
     }

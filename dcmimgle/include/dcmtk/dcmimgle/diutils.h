@@ -136,7 +136,11 @@ enum EP_Interpretation
     /// YCbCr full 4:2:2
     EPI_YBR_Full_422,
     /// YCbCr partial 4:2:2
-    EPI_YBR_Partial_422
+    EPI_YBR_Partial_422,
+    /// YCbCr RCT
+    EPI_YBR_RCT,
+    /// YCbCr ICT
+    EPI_YBR_ICT
 };
 
 
@@ -358,6 +362,8 @@ const SP_Interpretation PhotometricInterpretationNames[] =
     {"YBRFULL",       "YBR_FULL",        EPI_YBR_Full},            // underscore deleted to simplify detection
     {"YBRFULL422",    "YBR_FULL_422",    EPI_YBR_Full_422},        // underscores deleted to simplify detection
     {"YBRPARTIAL422", "YBR_PARTIAL_422", EPI_YBR_Partial_422},     // underscores deleted to simplify detection
+    {"YBRRCT",        "YBR_RCT",         EPI_YBR_RCT },            // underscores deleted to simplify detection
+    {"YBRICT",        "YBR_ICT",         EPI_YBR_ICT },            // underscores deleted to simplify detection
     {NULL,            NULL,              EPI_Unknown}
 };
 
