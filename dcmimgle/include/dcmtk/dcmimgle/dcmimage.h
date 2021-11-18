@@ -1849,6 +1849,11 @@ class DCMTK_DCMIMGLE_EXPORT DicomImage
                           const char *filename,
                           const unsigned long frame = 0);
 
+    /** set next frame to be processed
+    *
+    *  @param  fstart  next frame to be processed (stored for later use)
+    */
+    void setFrameStart(unsigned long fstart);
 
  protected:
 

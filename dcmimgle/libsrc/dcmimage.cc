@@ -71,6 +71,15 @@ DicomImage::DicomImage(const char *filename,
     }
 }
 
+void DicomImage::setFrameStart(unsigned long fstart)
+{
+    if (Document == NULL)
+    {
+        throw std::runtime_error("DicomImage::setFrameStart: Document is null");
+    }
+
+    Document->setFrameStart(fstart);
+}
 
 // --- create 'DicomImage' from valid 'DicomObject' with transfer syntax 'xfer'
 

@@ -116,6 +116,15 @@ class DCMTK_DCMIMGLE_EXPORT DiDocument
         return OFstatic_cast(DcmDataset *, Object);
     }
 
+    /** set next frame to be processed
+    *
+    *  @param  fstart  next frame to be processed (stored for later use)
+    */
+    inline void setFrameStart(unsigned long fstart)
+    {
+        FrameStart = fstart;
+    }
+
     /** get first frame to be processed
      *
      ** @return first frame to be processed
