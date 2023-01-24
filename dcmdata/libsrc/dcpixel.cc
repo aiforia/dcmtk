@@ -1332,6 +1332,7 @@ OFCondition DcmPixelData::writeJson(STD_NAMESPACE ostream &out,
       /* for an empty value field, we do not need to do anything */
       if (getLengthField() > 0)
       {
+#if 0
          /* encode binary data as Base64 */
          format.printInlineBinaryPrefix(out);
          out << "\"";
@@ -1339,6 +1340,7 @@ OFCondition DcmPixelData::writeJson(STD_NAMESPACE ostream &out,
          Uint8 *byteValues = OFstatic_cast(Uint8 *, getValue(EBO_LittleEndian));
          OFStandard::encodeBase64(out, byteValues, OFstatic_cast(size_t, getLengthField()));
          out << "\"";
+#endif
       }
       /* write JSON Closer */
       writeJsonCloser(out, format);
