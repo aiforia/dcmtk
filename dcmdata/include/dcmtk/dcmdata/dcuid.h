@@ -391,6 +391,16 @@ DCMTK_DCMDATA_EXPORT unsigned long dcmGuessModalityBytes(const char *sopClassUID
 #define UID_HEVCMainProfileLevel5_1TransferSyntax "1.2.840.10008.1.2.4.107"
 /// HEVC/H.265 Main 10 Profile / Level 5.1
 #define UID_HEVCMain10ProfileLevel5_1TransferSyntax "1.2.840.10008.1.2.4.108"
+/// High-Throughput JPEG 2000 Image Compression (Lossless Only)
+#define UID_HighThroughputJPEG2000ImageCompressionLosslessOnlyTransferSyntax      "1.2.840.10008.1.2.4.201"
+/// High-Throughput JPEG 2000 with RPCL Options Image Compression (Lossless Only)
+#define UID_HighThroughputJPEG2000RPCLImageCompressionLosslessOnlyTransferSyntax  "1.2.840.10008.1.2.4.202"
+/// High-Throughput JPEG 2000 Image Compression
+#define UID_HighThroughputJPEG2000ImageCompressionTransferSyntax                  "1.2.840.10008.1.2.4.203"
+/// JPIP HTJ2K Referenced
+#define UID_JPIPHTJ2KReferencedTransferSyntax                                     "1.2.840.10008.1.2.4.204"
+/// JPIP HTJ2K Referenced Deflate
+#define UID_JPIPHTJ2KReferencedDeflateTransferSyntax                              "1.2.840.10008.1.2.4.205"
 /// RLE Lossless
 #define UID_RLELosslessTransferSyntax           "1.2.840.10008.1.2.5"
 /// SMPTE ST 2110-20 Uncompressed Progressive Active Video
